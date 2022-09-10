@@ -1,6 +1,4 @@
 from django.contrib import admin
-
-from albums.models import Album
-
+from .models import Genre
 # Register your models here.
-admin.site.register(Album)
+admin.site.register(Genre)

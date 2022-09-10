@@ -6,6 +6,7 @@ from rest_framework import status
 from rest_framework.exceptions import PermissionDenied
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
+
 from .serializers.common import UserSerializer
 User = get_user_model()
 
