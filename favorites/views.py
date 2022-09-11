@@ -8,7 +8,7 @@ from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 
 
-from .models import favorite
+from .models import Favorite
 
 from .serializers.common import FavoriteSerializer
 
