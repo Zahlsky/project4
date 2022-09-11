@@ -21,5 +21,6 @@ urlpatterns = [
     path('auth/', include('jwt_auth.urls')),
     path('albums/', include('albums.urls')),
     path('reviews/', include('reviews.urls')),
-    path('genres/', include('genres.urls'))
+    path('genres/', include('genres.urls')),
+    path('favorites/', include('favorites.urls'))
 ]

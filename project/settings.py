@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'jwt_auth',
     'albums',
     'reviews',
-    'genres'
+    'genres',
+    'favorites'
 ]
 
 MIDDLEWARE = [
