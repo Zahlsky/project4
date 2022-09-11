@@ -20,10 +20,7 @@ class UserSerializer(serializers.ModelSerializer):
                 "password_confirmation": "Does not match password"
             })
 
-        try:
-            password_validation.validate_password(password)
-        except ValidationError as e:
-            raise ValidationError({"password": e.messages})
+        password_validation.validate_password(password)
 
         data['password'] = make_password(password)
 

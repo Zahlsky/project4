@@ -10,7 +10,7 @@ class Album(models.Model):
     album_image = models.CharField(max_length=500, default=None)
     genres = models.ManyToManyField(
         "genres.Genre",
-        related_name="genres"
+        related_name="albums"
     )
     critic1_rating = models.PositiveIntegerField(default=None)
     critic2_rating = models.PositiveIntegerField(default=None)

@@ -4,20 +4,20 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 from .models import Album
-from .serializers.common import AlbumSerializer
+# from .serializers.common import AlbumSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from .serializers.populated import PopulatedAlbumSerializer
+from .serializers.populated import PopulatedAlbumSerializer, AlbumGenreSerializer
 
 # Create your views here.
 
 
 class AlbumListView(APIView):
-    # permission_classes = (IsAuthenticatedOrReadOnly, )
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         albums = Album.objects.all()
         print("albums-->", albums)
-        serialized_albums = AlbumSerializer(albums, many=True)
+        serialized_albums = AlbumGenreSerializer(albums, many=True)
         print(serialized_albums)
         return Response(serialized_albums.data, status=status.HTTP_200_OK)
 
