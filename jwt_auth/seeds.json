@@ -1,0 +1,82 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "last_login": "2022-09-10T14:15:40.163Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-09-10T14:15:24.119Z",
+    "name": "",
+    "email": "aaron.zahl@gmail.com",
+    "username": "aaronzahl",
+    "password": "pbkdf2_sha256$390000$c7VsW7QKvIoO0nvG3YaROC$+eZkyghTIMKJExN6UrkJ3S63x/l9K1BlWWHVMp87sKA=",
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-09-11T12:18:54.989Z",
+    "name": "",
+    "email": "aaron4@email.com",
+    "username": "aaronicus4",
+    "password": "pbkdf2_sha256$390000$MwytV9WSf3GAwDup8o7bUB$4qZ7jEXfTA95SVhQWnOakCETKywvpggaQaDk40uqTR8=",
+    "profile_image": "image2.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 3,
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-09-11T12:22:13.427Z",
+    "name": "",
+    "email": "aaron5@email.com",
+    "username": "aaronicus5",
+    "password": "pbkdf2_sha256$390000$Y8GcjArVd1wJANXqcyUrhB$TkpiJcxEetP96w4fL8JEQUAPyj4cmWee9c0hdBtehq4=",
+    "profile_image": "image2.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 5,
+  "fields": {
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-09-11T16:35:52.223Z",
+    "name": "",
+    "email": "aaron7@email.com",
+    "username": "aaronicus7",
+    "password": "pbkdf2_sha256$390000$rXcgsMCr7sTWdX1iECtXpR$KrpTKfx/9JpVKxgCuprbuHkV7Dk6nDjBVXkhdIvVlRk=",
+    "profile_image": "image2.jpg",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

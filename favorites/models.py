@@ -13,6 +13,6 @@ class Favorite(models.Model):
     )
     owner = models.ForeignKey(
         'jwt_auth.User',
-        related_name='favorite',
+        related_name='favorites',
         on_delete=models.CASCADE
     )

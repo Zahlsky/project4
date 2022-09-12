@@ -53,3 +53,33 @@ class LoginView(APIView):
         print("TOKEN ->", token)
 
         return Response({"token": token, "message": f"Welcome back {user_to_login.username}"})
+
+
+class UserProfileView(APIView):
+
+    def get_user(self, pk):
+        try:
+            return User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            raise PermissionDenied(detail="Invalid Credentials")
+
+    def get(self, _request, pk):
+        user = self.get_user(pk=pk)
+        serialized_user = UserSerializer(user)
+        print('userprofile', serialized_user)
+        return Response(serialized_user.data, status=status.HTTP_200_OK)
+
+
+class SignedInUserProfileView(APIView):
+
+    def get_user(self, pk):
+        try:
+            return User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            raise PermissionDenied(detail="Invalid Credentials")
+
+    def get(self, _request, pk):
+        user = self.get_user(pk=pk)
+        serialized_user = UserSerializer(user)
+        print('userprofile', serialized_user)
+        return Response(serialized_user.data, status=status.HTTP_200_OK)
