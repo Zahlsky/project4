@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Main from './components/Main'
+import SingleAlbum from './components/SingleAlbum'
 
 
 
@@ -13,10 +14,12 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div className="site-wrapper">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Main />}></Route>
+          <Route path='/home' element={<Main />}></Route>
+          <Route path='/album/:id/' element={<SingleAlbum />}></Route>
+
         </Routes>
       </BrowserRouter>
     </div>

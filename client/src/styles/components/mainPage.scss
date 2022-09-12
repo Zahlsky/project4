@@ -1,0 +1,31 @@
+.hero-image {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1700px;
+
+  img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.album-container {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,13 @@
+.hero-image {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1700px;
+}
+.hero-image img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=mainPage.css.map */
