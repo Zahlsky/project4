@@ -1,0 +1,30 @@
+.me-auto {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 !important;
+}
+
+.navbar-main {
+  color: white;
+}
+
+
+#navbar-container {
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  color: bisque;
+
+  a {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+
+}
+

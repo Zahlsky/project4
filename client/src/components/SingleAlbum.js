@@ -14,7 +14,7 @@ import { LinearProgress } from '@mui/material'
 const SingleAlbum = () => {
 
   const { id } = useParams()
-  const [album, setAlbum] = useState([])
+  const [album, setAlbum] = useState(false)
   const [errors, setErrors] = useState(false)
 
   useEffect(() => {
@@ -31,8 +31,6 @@ const SingleAlbum = () => {
     getData()
   }, [id])
   
-  const userReviews = album.reviews
-  console.log('userReviews var->', userReviews)
 
   // const userReview = Object.keys(userReviews).map((key => [(key), userReviews[key]]))
   // console.log('user review after objectKeys->', userReview)
@@ -52,6 +50,7 @@ const SingleAlbum = () => {
         
           
           <Row>
+
             <div className='album-container'>
               <div className='title'>
                 {album.artist} - {album.title} 
@@ -72,29 +71,29 @@ const SingleAlbum = () => {
 
           <Row>
             <>
-              { userReviews.length ? (
-                <div> 
-                  {
-                  userReviews.map((review, idx) => {
-                    const { text, owner } = review
+              { album && album.reviews.length ? 
+                
+                  
+                album.reviews.map((review, idx) => {
+                  const { text, owner } = review
 
-                    return (
-                      <>
-                        <div className='review-container'>
-                          <div key={idx} className='user-review'>
-                            <p>{text}</p>
-                            <p>{owner.username}</p>
-                          </div>
-                        </div>
-                      </>     
-                    )
-                    
+                  return (                   
+                    <div key={idx} className='review-container'>
+                      <div className='user-review'>
+                        <p>{text}</p>
+                        <p>{owner.username}</p>
+                      </div>
+                    </div>                       
+                  )
+                  
 
-                  })
-                }
-                </div>
-                )
+                })
+                :
+                <h2>gone wrong</h2>
               }
+                
+                
+              
             </>
           </Row>
           
