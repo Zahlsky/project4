@@ -49,7 +49,7 @@ const AllAlbums = () => {
                 <div className='title'>
                   {artist} - {title} 
                 </div>
-                <img className='album-image' src={album_image} alt={title}/>
+                <img className='album-image' loading='lazy'src={album_image} alt={title}/>
                 <div>critic score <span>{(critic1_rating + critic2_rating) / 2}</span></div>
               </div>
             </>

@@ -30,6 +30,19 @@ const SingleAlbum = () => {
     }
     getData()
   }, [id])
+  
+  const userReviews = album.reviews
+  console.log('userReviews var->', userReviews)
+
+  // const userReview = Object.keys(userReviews).map((key => [(key), userReviews[key]]))
+  // console.log('user review after objectKeys->', userReview)
+
+ 
+
+
+  
+
+  
 
   return (
 
@@ -57,29 +70,34 @@ const SingleAlbum = () => {
             </div>
           </Row>
 
-          {/* <Row>
-            {(album.reviews).map(review => {
-              const { id, reviews, owner } = review
-              console.log(review)
+          <Row>
+            <>
+              { userReviews.length ? (
+                <div> 
+                  {
+                  userReviews.map((review, idx) => {
+                    const { text, owner } = review
 
-              return (
-                <>
-                  <div className='album-container'>
-                    <div className='user-review'>
-                      {review.owner}
-                    </div>
-                  </div>
-                </>
-                
-                
-              )
-            })}
+                    return (
+                      <>
+                        <div className='review-container'>
+                          <div key={idx} className='user-review'>
+                            <p>{text}</p>
+                            <p>{owner.username}</p>
+                          </div>
+                        </div>
+                      </>     
+                    )
+                    
 
-          </Row> */}
+                  })
+                }
+                </div>
+                )
+              }
+            </>
+          </Row>
           
-      
-      
-    
         </>
         :
         <h2>
