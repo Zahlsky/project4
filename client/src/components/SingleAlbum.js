@@ -8,7 +8,7 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { LinearProgress } from '@mui/material'
 
 const SingleAlbum = () => {
@@ -62,8 +62,9 @@ const SingleAlbum = () => {
                   <img src={GuardianLogo} alt='Guardian logo' /><span>{album.critic1_rating}/10</span><p>read full review here</p>
                   <img src={PitchforkLogo} alt='Guardian logo' /><span>{album.critic1_rating}/10</span><p>read full review here</p>
                 </div>
+
                 <div>
-                  
+                  <Link className="btn navigatebtn-marginbt" as="link" to={ `/album/${id}/addreview` }>Leave a review</Link>    
                 </div>
               </div>
             </div>
@@ -77,22 +78,31 @@ const SingleAlbum = () => {
                 album.reviews.map((review, idx) => {
                   const { text, owner, rating } = review
 
-                  return (                   
-                    <div key={idx} className='review-container'>
-                      <div className='user-review'>
-                        <p>{owner.username}</p>
-                        <p>{text}</p>
-                        <p>{'⭐️'.repeat(rating)}</p>
+                  return (
+                    <>
+                      <div>
+                                        
+                        <div key={idx} className='review-container'></div>
+                    
+                        <div className='user-review'>
+                          <p>{owner.username}</p>
+                          <p>{text}</p>
+                          <p>{'⭐️'.repeat(rating)}</p>
 
-                        
-                      </div>
-                    </div>                       
+                          
+                        </div>
+                      </div>  
+                    </>                     
                   )
                   
 
                 })
                 :
-                <h2>gone wrong</h2>
+                <div className="review-container">
+                  <h3 className="review-heading">Reviews:</h3>
+                  <p className="review-para">There are no reviews for this property</p>
+                  <Link className="btn navigatebtn-marginbt" as="link" to={`/review/${id}`}>Leave a review</Link>
+                </div>
               }
                 
                 

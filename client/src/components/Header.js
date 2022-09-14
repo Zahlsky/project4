@@ -17,7 +17,7 @@ const Header = () => {
             <NavDropdown title={<Avatar src={blankProfile}/>} className='nav-dropdown'>
               <NavDropdown.Item as={Link} to='/login'>Login</NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/register'>Register</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/userprofile'>Profile Page</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/userprofile/:id'>Profile Page</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

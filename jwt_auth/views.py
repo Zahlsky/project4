@@ -8,6 +8,7 @@ from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
 
 from .serializers.common import UserSerializer
+from .serializers.populated import PopulatedUserSerializer
 User = get_user_model()
 
 
@@ -66,7 +67,7 @@ class UserProfileView(APIView):
 
     def get(self, _request, pk):
         user = self.get_user(pk=pk)
-        serialized_user = UserSerializer(user)
+        serialized_user = PopulatedUserSerializer(user)
         print('userprofile', serialized_user)
         return Response(serialized_user.data, status=status.HTTP_200_OK)
 
@@ -81,6 +82,6 @@ class SignedInUserProfileView(APIView):
 
     def get(self, _request, pk):
         user = self.get_user(pk=pk)
-        serialized_user = UserSerializer(user)
+        serialized_user = PopulatedUserSerializer(user)
         print('userprofile', serialized_user)
         return Response(serialized_user.data, status=status.HTTP_200_OK)

@@ -15,6 +15,7 @@ class ReviewListView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def post(self, request):
+        request.data['owner'] = request.user.id
         print("request.user", request.user)
         print("request.album", request.data.get('album'))
         review_to_create = ReviewSerializer(data=request.data)

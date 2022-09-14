@@ -15,7 +15,7 @@ class JWTAuthentication(BasicAuthentication):
             return None
         if header == 'null':
             return None
-        print('header ->', header)
+
         if not header.startswith('Bearer'):
             raise PermissionDenied("Invalid Token")
 

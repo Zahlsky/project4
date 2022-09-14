@@ -6,8 +6,8 @@ import axios from 'axios'
 
 const PrivateRoute = ({ children }) => {
   
-    const token = localStorage.getItem('BAOToken')
-    axios.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : null
+  const token = localStorage.getItem('BAOToken')
+  axios.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : null
  
 
   return ( token ? children : <Navigate to='/login' />
