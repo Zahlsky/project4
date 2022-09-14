@@ -13,7 +13,7 @@ const UserProfile = () => {
   function refreshPage() {
     window.location.reload()
   }
-  const { id, pk } = useParams()  
+  const { id } = useParams()  
   //when coming back to page, scroll to top
   useEffect(() => {
     window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } )
@@ -44,11 +44,13 @@ const UserProfile = () => {
 
   const { username, profile_image, reviews } = userData
 
+
+
   console.log(username, profile_image, reviews)
 
-  const handleDelete = async (reviews_id) => {
+  const handleDelete = async (id) => {
     try {
-      console.log( { reviews_id } )
+      console.log( { id } )
       const deleteReview = await axios.delete(`api/reviews/${id}`)
       console.log('button clicked to delete review ->', deleteReview)
 
@@ -76,7 +78,7 @@ const UserProfile = () => {
         
               
               {reviews.map(review => {
-                const { pk, rating, text } = review
+                const { id, rating, text } = review
                 return (
                   <>
                     <div className='user-reviews-container'>
