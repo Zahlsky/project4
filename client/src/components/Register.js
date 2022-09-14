@@ -49,7 +49,7 @@ const Register = () => {
       console.log(data)
       //setError(null)
       //go to 
-      // navigate('/login')
+      navigate('/login')
 
     } catch (error) {
       console.log(error)

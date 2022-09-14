@@ -75,13 +75,16 @@ const SingleAlbum = () => {
                 
                   
                 album.reviews.map((review, idx) => {
-                  const { text, owner } = review
+                  const { text, owner, rating } = review
 
                   return (                   
                     <div key={idx} className='review-container'>
                       <div className='user-review'>
-                        <p>{text}</p>
                         <p>{owner.username}</p>
+                        <p>{text}</p>
+                        <p>{'⭐️'.repeat(rating)}</p>
+
+                        
                       </div>
                     </div>                       
                   )

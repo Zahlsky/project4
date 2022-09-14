@@ -13,7 +13,7 @@ const Header = () => {
         <Navbar.Brand as={Link} to='/' className='brand landing-title-sm'>BAO22</Navbar.Brand>
         <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
           <Nav className='me-auto'>
-            <Nav.Link as={Link} to='/home'>Albums</Nav.Link>
+            <Nav.Link as={Link} to='/'>Albums</Nav.Link>
             <NavDropdown title={<Avatar src={blankProfile}/>} className='nav-dropdown'>
               <NavDropdown.Item as={Link} to='/login'>Login</NavDropdown.Item>
               <NavDropdown.Item as={Link} to='/register'>Register</NavDropdown.Item>
