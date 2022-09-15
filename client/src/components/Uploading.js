@@ -24,9 +24,9 @@ const Uploading = ({ setData, data }) => {
     setLoading(false)
   }
   return ( <div>
-    <Container>
-      <h5>Upload image</h5>
-      <FormGroup>
+    <Container className='image-upload-container'>
+      <h5>Upload Image</h5>
+      <FormGroup className='image-upload-buttons'>
         <input type='file' name='file' placeholder='Upload image here' onChange={UploadImage} />
         <br />
         {loading ? (<h3>Loading...</h3>) : <img src={data.profile_image} style={{ width: '200px' }}/>}

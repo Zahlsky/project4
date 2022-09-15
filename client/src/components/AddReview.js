@@ -93,7 +93,7 @@ const AddReview = () => {
         <Row>
           <form className='form' onSubmit={onSubmit}>
             <h3 className='text-center'>Your Review</h3>
-            <Box className='submitbox'>
+            <div className='submitbox'>
               <div>Rating *</div>
               <Slider aria-label='Rating' defaultValue={1} valueLabelDisplay='auto' step={1} marks min={1} max={5} onChange={handleChange} name='rating' />
               <TextareaAutosize required className='form-input autosize' id='outlined-required' minRows={2} name='text' placeholder='Text *' value={data.text} onChange={handleChange} />
@@ -101,7 +101,7 @@ const AddReview = () => {
               {login && <Link className='user-page-btn navigatebtn ' as='btn' to='/login' >Go to log in </Link>} 
               <input type='submit' value='Submit review' className='submitbtn' />
               {message && <div className='oksubmit'>{message}</div>}
-            </Box>
+            </div>
           </form>
         </Row>
       </Container>

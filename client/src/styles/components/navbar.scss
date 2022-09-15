@@ -2,14 +2,26 @@
   box-shadow: 0 0 10px rgb(0 0 0 / 50%);
 
   a {
-    color: $btn-hover-text;
-    font-size: 1.2rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
     font-weight: 500;
+    
     margin-right: 10px;
   }
 }
 
 a {
   text-decoration: none;
-
 }
+
+.navbar {
+  font-family: Neuton;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-toggle.nav-link {
+  color: black;
+}
+

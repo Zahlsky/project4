@@ -54,15 +54,15 @@ const Register = () => {
     } catch (error) {
       console.log(error)
 
-      setError(error.response.data.message)
+      setError(error.response.data)
 
-      if (error.response.data.message === 'Passwords do not match.') {
+      if (error.response.data === 'Passwords do not match.') {
         setPwError('yep')
       }
-      if (error.response.data.message === 'User with this email already exists') {
+      if (error.response.data === 'User with this email already exists') {
         setEmailError('yep')
       }
-      if (error.response.data.message === 'User with this username already exists') {
+      if (error.response.data === 'User with this username already exists') {
         setUserError('yep')
       }
 
@@ -85,7 +85,7 @@ const Register = () => {
             <TextField required error={userError ? true : false} className='form-input' id='outlined-required' name='username' label='username' value={data.username} onChange={handleChange} />
             <TextField required error={pwError ? true : false} className='form-input' id='outlined-password-input' type='password' name='password' label='password' value={data.password} onChange={handleChange} />
             <TextField required error={pwError ? true : false} className='form-input' id='outlined-password-input 2' type='password' name='password_confirmation' label='Confirm Password' value={data.password_confirmation} onChange={handleChange} />
-
+            
             <Uploading name='profile_image' setData={setData} data={data}/>
 
             {error && <div className='error-mex'>{error}</div>}

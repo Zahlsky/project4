@@ -14,14 +14,14 @@ const Header = () => {
   return (
     <Navbar id='navbar-container'>
       <Container className='navbar-main'>
-        <Navbar.Brand as={Link} to='/' className='brand landing-title-sm'>BAO22</Navbar.Brand>
+        <Navbar.Brand as={Link} to='/' className='logo-title'>Album Of The Year</Navbar.Brand>
         <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
           <Nav className='me-auto'>
             <Nav.Link as={Link} to='/'>Albums</Nav.Link>
             <NavDropdown title={<Avatar src={blankProfile}/>} className='nav-dropdown'>
-              <NavDropdown.Item as={Link} to='/login'>Login</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/register'>Register</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to='/userprofile'>Profile Page</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/login'><p className='login-nav'>Login</p></NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/register'><p className='login-nav'>Register</p></NavDropdown.Item>
+              <NavDropdown.Item as={Link} to='/userprofile'><p className='login-nav'>Profile</p></NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

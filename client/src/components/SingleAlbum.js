@@ -2,14 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import GuardianLogo from '../images-for-project4/guardianlogo.jpg'
 import PitchforkLogo from '../images-for-project4/pitchfork-logo.jpg'
+import GuardianLogo from '../images-for-project4/guardianlogo.jpg'
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { useParams, Link } from 'react-router-dom'
 import { LinearProgress } from '@mui/material'
+import Card from 'react-bootstrap/Card'
 
 const SingleAlbum = () => {
 
@@ -69,7 +70,8 @@ const SingleAlbum = () => {
                 </div>
 
                 <div>
-                  <Link className="btn navigatebtn-marginbt" as="link" to={ `/album/${id}/addreview` }>Leave a review</Link>    
+                  <Link className="btn" as="link" to={ `/album/${id}/addreview` }>Leave a review</Link>   
+                  <h3>User Reviews</h3> 
                 </div>
               </div>
             </div>
@@ -77,7 +79,9 @@ const SingleAlbum = () => {
 
           <Row>
             <>
+              
               { album && album.reviews.length ? 
+              
                 
                   
                 album.reviews.map((review, idx) => {
@@ -85,18 +89,30 @@ const SingleAlbum = () => {
 
                   return (
                     <>
-                      <div>
+
+                      <div className='user-review-container'>
+                        
                                         
                         <div key={idx} className='review-container'></div>
-                    
-                        <div className='user-review'>
-                          <p>{owner.username}</p>
-                          <p>{text}</p>
-                          <p>{'⭐️'.repeat(rating)}</p>
 
-                          
-                        </div>
-                      </div>  
+                        <Card
+                          bg='dark'
+                          text='white'
+                          style={{ width: '18rem' }}
+                          className="mb-5"
+                        >
+                          <Card.Header>{owner.username}</Card.Header>
+                          <Card.Body>
+                            <Card.Title>{'⭐️'.repeat(rating)}</Card.Title>
+                            <Card.Text>
+                              {text}
+                            </Card.Text>
+                          </Card.Body>
+                        </Card>
+
+                        
+                      </div>
+                     
                     </>                     
                   )
                   
