@@ -13,6 +13,10 @@ import { LinearProgress } from '@mui/material'
 
 const SingleAlbum = () => {
 
+  const token = localStorage.getItem('BAOToken')
+  axios.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : null
+  console.log('token ->', token)
+
   const { id } = useParams()
   const [album, setAlbum] = useState(false)
   const [errors, setErrors] = useState(false)
@@ -30,8 +34,9 @@ const SingleAlbum = () => {
     }
     getData()
   }, [id])
-  
 
+
+  
   // const userReview = Object.keys(userReviews).map((key => [(key), userReviews[key]]))
   // console.log('user review after objectKeys->', userReview)
 
@@ -100,7 +105,7 @@ const SingleAlbum = () => {
                 :
                 <div className="review-container">
                   <h3 className="review-heading">Reviews:</h3>
-                  <p className="review-para">There are no reviews for this property</p>
+                  <p className="review-para">There are no reviews for this album</p>
                   <Link className="btn navigatebtn-marginbt" as="link" to={`/review/${id}`}>Leave a review</Link>
                 </div>
               }

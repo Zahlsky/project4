@@ -29,7 +29,7 @@ const UserProfile = () => {
         const token = localStorage.getItem('BAOToken')
         axios.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : null
         
-        const { data } = await axios.get(`/api/auth/profile/${id}`)
+        const { data } = await axios.get('/api/auth/profile/')
         setUserData(data)
         console.log(data)
       } catch (error) {
@@ -84,6 +84,8 @@ const UserProfile = () => {
                     <div className='user-reviews-container'>
                       {'⭐️'.repeat(rating)} - {text}
                       <button className="user-page-btn delete-review" onClick={() => handleDelete(id)}>Delete This Review</button> 
+                      <Link className="user-page-btn navigatebtn-spaced" as="link" to={`/review-update/review/${id}`}>Edit the Review</Link>
+                    
 
                     </div>
                   </>

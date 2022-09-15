@@ -9,6 +9,7 @@ import Login from './components/Login'
 import PrivateRoute from './components/PrivateRoute'
 import AddReview from './components/AddReview'
 import UserProfile from './components/UserProfile'
+import UpdateReview from './components/UpdateReview'
 
 
 
@@ -26,10 +27,11 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />}></Route>
           <Route path='/album/:id/' element={<SingleAlbum />}></Route>
-          <Route path='album/:id/addreview' element={<PrivateRoute><AddReview /></PrivateRoute>}></Route>
-          <Route path='/userprofile/:id' element={<UserProfile />}></Route>
+          <Route path='/album/:id/addreview' element={<PrivateRoute><AddReview /></PrivateRoute>}></Route>
+          <Route path='/userprofile' element={<UserProfile />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/login' element={<Login />}></Route>
+          <Route path='/review-update/review/:id' element={<UpdateReview />}></Route>
           
 
         </Routes>

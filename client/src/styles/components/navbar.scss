@@ -1,0 +1,15 @@
+#navbar-container {
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+
+  a {
+    color: $btn-hover-text;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+
+}

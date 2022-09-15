@@ -7,6 +7,7 @@ from .models import Review
 from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
+from .serializers.populated import PopulatedReviewSerializer
 from .serializers.common import ReviewSerializer
 # Create your views here.
 
@@ -39,6 +40,11 @@ class ReviewDetailView(APIView):
         except Review.DoesNotExist:
             raise NotFound("review not found")
 
+    def get(self, request, pk):
+        review = self.get_review(pk)
+        serialized_review = ReviewSerializer(review)
+        return Response(serialized_review.data)
+
     def delete(self, request, pk):
         review_to_delete = self.get_review(pk)
         print("Request.user,id >>>", review_to_delete.owner)
@@ -52,8 +58,10 @@ class ReviewDetailView(APIView):
         return Response("review successfully deleted", status=status.HTTP_202_ACCEPTED)
 
     def put(self, request, pk):
+        request.data['owner'] = request.user.id
         review_to_update = self.get_review(pk=pk)
-        updated_review = ReviewSerializer(review_to_update, data=request.data)
+        updated_review = ReviewSerializer(
+            review_to_update, data=request.data)
         if review_to_update.owner != request.user:
             raise PermissionDenied("Must be owner to edit review")
         try:
