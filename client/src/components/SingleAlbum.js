@@ -65,8 +65,8 @@ const SingleAlbum = () => {
               <div>critic score <span>{(album.critic1_rating + album.critic2_rating) / 2}</span></div>
               <div className='critic-review-container'>
                 <div className='critic-review'>
-                  <img src={GuardianLogo} alt='Guardian logo' /><span>{album.critic1_rating}/10</span><p>read full review here</p>
-                  <img src={PitchforkLogo} alt='Guardian logo' /><span>{album.critic1_rating}/10</span><p>read full review here</p>
+                  <img src={GuardianLogo} alt='Guardian logo' /><span>{album.critic1_rating}/5</span><a href={album.critic1_link} target='_blank' rel='noopener noreferrer'><p>read full review here</p></a>
+                  <img src={PitchforkLogo} alt='Guardian logo' /><span>{album.critic1_rating}/5</span><a href={album.critic2_link} target='_blank' rel='noopener noreferrer'><p>read full review here</p></a>
                 </div>
 
                 <div>
