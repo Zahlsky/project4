@@ -3,12 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Row, Container } from 'react-bootstrap'
-import { TextField } from '@mui/material'
 import Slider from '@mui/material/Slider'
 import TextareaAutosize from '@mui/material/TextareaAutosize'
-import Box from '@mui/material/Box'
 import { useParams } from 'react-router-dom'
-import jwtDecode from 'jwt-decode'
+
 
 
 

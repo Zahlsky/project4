@@ -4,10 +4,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import PitchforkLogo from '../images-for-project4/pitchfork-logo.jpg'
 import GuardianLogo from '../images-for-project4/guardianlogo.jpg'
-import ThemeProvider from 'react-bootstrap/ThemeProvider'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import { useParams, Link } from 'react-router-dom'
 import { LinearProgress } from '@mui/material'
 import Card from 'react-bootstrap/Card'
@@ -25,7 +23,7 @@ const SingleAlbum = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`/api/albums/${id}`)
+        const { data } = await axios.get(`/api/albums/${id}/`)
         setAlbum(data)
         console.log(data)
 

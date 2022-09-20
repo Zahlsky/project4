@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86511bfa.css",
+    "main.js": "/static/js/main.c8a82352.js",
+    "static/media/heroImage.png": "/static/media/heroImage.5002ec932f61beec61bf.png",
+    "static/media/guardianlogo.jpg": "/static/media/guardianlogo.f70105a1fee557cd8b6f.jpg",
+    "static/media/blank-profile-picture.webp": "/static/media/blank-profile-picture.7a6a6c54279a54d1977c.webp",
+    "static/media/pitchfork-logo.jpg": "/static/media/pitchfork-logo.150704d90122244275b7.jpg",
+    "index.html": "/index.html",
+    "main.86511bfa.css.map": "/static/css/main.86511bfa.css.map",
+    "main.c8a82352.js.map": "/static/js/main.c8a82352.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86511bfa.css",
+    "static/js/main.c8a82352.js"
+  ]
+}

@@ -51,7 +51,7 @@ const UserProfile = () => {
   const handleDelete = async (id) => {
     try {
       console.log( { id } )
-      const deleteReview = await axios.delete(`api/reviews/${id}`)
+      const deleteReview = await axios.delete(`api/reviews/${id}/`)
       console.log('button clicked to delete review ->', deleteReview)
 
       
