@@ -58,7 +58,7 @@ class ReviewDetailView(APIView):
         return Response("review successfully deleted", status=status.HTTP_202_ACCEPTED)
 
     def put(self, request, pk):
-        request.data['owner'] = request.user.id
+        # request.data['owner'] = request.user.id
         review_to_update = self.get_review(pk=pk)
         updated_review = ReviewSerializer(
             review_to_update, data=request.data)

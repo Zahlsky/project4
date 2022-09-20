@@ -80,7 +80,7 @@ const UpdateReview = () => {
       //WAIT and go to 
       // setTimeout(navigate('/userprofile'), 4000)
 
-      navigate(`/userprofile/${id}`)
+      navigate('/userprofile/')
     } catch (error) {
       console.log(error)
 

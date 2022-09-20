@@ -69,7 +69,7 @@ const UserProfile = () => {
       {profile_image ?
 
         <Container as='main'>
-          <Row className="mt-5">
+          <Row className="mt-5 text-center">
             <h1>Welcome <span>{username}</span></h1>
             <div className='user-review-container'>
               <div className='user-image-container'> <img src={profile_image} alt="profile" /> 
@@ -81,13 +81,23 @@ const UserProfile = () => {
                 const { id, rating, text } = review
                 return (
                   <>
-                    <div className='user-reviews-container'>
-                      {'⭐️'.repeat(rating)} - {text}
+                    <Card
+                      bg='dark'
+                      text='white'
+                      style={{ width: '18rem' }}
+                      className="mb-5"
+                    >
+                      <Card.Header>{username}</Card.Header>
+                      <Card.Body>
+                        <Card.Title>{'⭐️'.repeat(rating)}</Card.Title>
+                        <Card.Text>
+                          {text}
+                        </Card.Text>
+                      </Card.Body>
                       <button className="user-page-btn delete-review" onClick={() => handleDelete(id)}>Delete This Review</button> 
-                      <Link className="user-page-btn navigatebtn-spaced" as="link" to={`/review-update/review/${id}`}>Edit the Review</Link>
+                      <button className="user-page-btn delete-review"><Link as="link" to={`/review-update/review/${id}`}>Edit the Review</Link></button>
+                    </Card>
                     
-
-                    </div>
                   </>
                 )
               })}

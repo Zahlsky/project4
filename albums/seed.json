@@ -1,0 +1,352 @@
+[
+{
+  "model": "albums.album",
+  "pk": 1,
+  "fields": {
+    "title": "Warm Chris",
+    "artist": "Aldous Harding",
+    "release_date": "25/03/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1662975661/aldous_mwfck1.jpg",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/mar/27/aldous-harding-warm-chris-review-endearingly-introspective-folk-pop",
+    "critic2_link": "https://pitchfork.com/reviews/albums/aldous-harding-warm-chris/",
+    "genres": [
+      9,
+      14
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 2,
+  "fields": {
+    "title": "Gold",
+    "artist": "Alabaster De Plume",
+    "release_date": "12/04/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1662975528/R-22741910-1649283599-5765_a7oiye.jpg",
+    "critic1_rating": 4,
+    "critic2_rating": 5,
+    "critic1_link": "https://www.theguardian.com/music/2022/mar/05/alabaster-deplume-gold-review-angus-fairbairn-total-refreshment-centre",
+    "critic2_link": "https://pitchfork.com/reviews/albums/alabaster-deplume-gold-go-forward-in-the-courage-of-your-love/",
+    "genres": [
+      26,
+      3
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 4,
+  "fields": {
+    "title": "Big Time",
+    "artist": "Angel Olsen",
+    "release_date": "12/06/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663316278/Big-Time-Cover-Art-768x768_kxv90x.jpg",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/jun/05/angel-olsen-big-time-review-sumptuous-folk-rock-balm",
+    "critic2_link": "https://pitchfork.com/reviews/albums/angel-olsen-big-time/",
+    "genres": [
+      9
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 5,
+  "fields": {
+    "title": "Time Skiffs",
+    "artist": "Animal Collective",
+    "release_date": "25/09/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663316685/AC_timeSkiffs_3000CVR_blb6j1.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/feb/03/animal-collective-time-skiffs-album-review",
+    "critic2_link": "https://pitchfork.com/reviews/albums/animal-collective-time-skiffs/",
+    "genres": [
+      26,
+      3
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 6,
+  "fields": {
+    "title": "Ephemeral Camera Feed",
+    "artist": "Astrid Sonne",
+    "release_date": "31/07/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663316858/astrid_sonne_ephemeral_camera_feed_miuttk.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/jun/05/angel-olsen-big-time-review-sumptuous-folk-rock-balm",
+    "critic2_link": "https://pitchfork.com/reviews/albums/astrid-sonne-ephemeral-camera-feed/",
+    "genres": [
+      16
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 7,
+  "fields": {
+    "title": "Un Verano Sin Ti",
+    "artist": "Bad Bunny",
+    "release_date": "19/04/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663318221/Bad-Bunny-Un-Verano-Sin_zab2bu.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/may/06/bad-bunny-un-verano-sin-ti-album-review",
+    "critic2_link": "https://pitchfork.com/reviews/albums/bad-bunny-un-verano-sin-ti/",
+    "genres": [
+      3,
+      13,
+      15
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 8,
+  "fields": {
+    "title": "Dragon New Warm Mountain I Believe in You",
+    "artist": "Big Thief",
+    "release_date": "10/02/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663318552/Big-Thief-Dragon-New-Warm-Mountain-I-Believe-in-You_hfsjcz.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 5,
+    "critic1_link": "https://www.theguardian.com/music/2022/feb/13/big-thief-dragon-new-warm-mountain-i-believe-in-you-review-their-best-to-date",
+    "critic2_link": "https://pitchfork.com/reviews/albums/big-thief-dragon-new-warm-mountain-i-believe-in-you/",
+    "genres": [
+      9,
+      26
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 9,
+  "fields": {
+    "title": "Running With the Hurricane",
+    "artist": "Camp Cope",
+    "release_date": "29/03/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663318647/Camp-Cope_yibvbc.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 5,
+    "critic1_link": "https://www.theguardian.com/music/2018/mar/02/camp-cope-how-to-socialise-make-friends-review-the-raw-sound-of-the-metoo-generation",
+    "critic2_link": "https://pitchfork.com/reviews/albums/camp-cope-running-with-the-hurricane/",
+    "genres": [
+      26
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 10,
+  "fields": {
+    "title": "Pompeii",
+    "artist": "Cate Le Bon",
+    "release_date": "07/02/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663318821/0027499618_16_ynxpe7.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/jan/30/cate-le-bon-pompeii-review-introspective-isolation-album",
+    "critic2_link": "https://pitchfork.com/reviews/albums/cate-le-bon-pompeii/",
+    "genres": [
+      26
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 11,
+  "fields": {
+    "title": "Crash",
+    "artist": "Charli XCX",
+    "release_date": "17/03/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663318921/Charli-XCX-Crash_pjvjsi.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/mar/17/charli-xcx-crash-review-atlantic",
+    "critic2_link": "https://pitchfork.com/reviews/albums/charli-xcx-crash/",
+    "genres": [
+      3
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 12,
+  "fields": {
+    "title": "Topical Dancer",
+    "artist": "Charlotte Adigéry  /  Bolis Pupul",
+    "release_date": "08/03/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663319162/Topical-Dancer_vzf5dr.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/mar/06/charlotte-adigery-bolis-pupul-topical-dancer-review-wildly-eclectic-electropop",
+    "critic2_link": "https://pitchfork.com/reviews/albums/charlotte-adigery-bolis-pupul-topical-dancer/",
+    "genres": [
+      16
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 13,
+  "fields": {
+    "title": "Labyrinthitis",
+    "artist": "Destroyer",
+    "release_date": "24/03/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663319294/MRG789_destroyer_LABYRINTHITIS_900_zk2wne.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/mar/27/destroyer-labyrinthitis-review-wayward-dance-infused-weirdness",
+    "critic2_link": "https://pitchfork.com/reviews/albums/destroyer-labyrinthitis/",
+    "genres": [
+      26
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 14,
+  "fields": {
+    "title": "Earl Sweatshirt",
+    "artist": "Sick!",
+    "release_date": "14/01/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663319594/Earl-Sweatshirt-Sick_vnlwmg.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/jan/16/earl-sweatshirt-sick-review-a-musically-rich-reset",
+    "critic2_link": "https://pitchfork.com/reviews/albums/earl-sweatshirt-sick/",
+    "genres": [
+      13
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 15,
+  "fields": {
+    "title": "CAPRISONGS",
+    "artist": "FKA twigs",
+    "release_date": "17/01/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663319773/FKA-twigs-Caprisongs_yauiwr.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/jan/15/fka-twigs-caprisongs-review-party-tunes-and-hard-won-notes-to-self",
+    "critic2_link": "https://pitchfork.com/reviews/albums/fka-twigs-caprisongs/",
+    "genres": [
+      16,
+      3,
+      15
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 16,
+  "fields": {
+    "title": "Gifted",
+    "artist": "Koffee",
+    "release_date": "20/05/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663319983/Koffee-Gifted_v821lq.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/mar/24/koffee-gifted-review-eclectic-and-appealing-reggae-by-jamaicas-next-big-star",
+    "critic2_link": "https://pitchfork.com/reviews/albums/koffee-gifted/",
+    "genres": [
+      3,
+      13,
+      15
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 17,
+  "fields": {
+    "title": "Shape UP",
+    "artist": "Leikeli47",
+    "release_date": "25/07/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663320187/SHAPE-UP-leikeli47_ch3si8.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.reddit.com/r/fantanoforever/comments/vtcdsx/leikeli47_shape_up_album_review/",
+    "critic2_link": "https://pitchfork.com/reviews/albums/leikeli47-shape-up/",
+    "genres": [
+      13
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 18,
+  "fields": {
+    "title": "Sault",
+    "artist": "Air",
+    "release_date": "24/01/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663320449/sault_air_w0xvdo.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/apr/19/sault-air-review-a-daring-act-of-creative-rebirth-pays-off",
+    "critic2_link": "https://pitchfork.com/reviews/albums/sault-air/",
+    "genres": [
+      16
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 19,
+  "fields": {
+    "title": "We’ve Been Going About This All Wrong",
+    "artist": "Sharon Van Etten",
+    "release_date": "09/05/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663320604/Sharon-Van-Etten-Album-2022_lasrsp.webp",
+    "critic1_rating": 3,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/may/08/sharon-van-etten-weve-been-going-about-this-all-wrong-review",
+    "critic2_link": "https://pitchfork.com/reviews/albums/sharon-van-etten-weve-been-going-about-this-all-wrong/",
+    "genres": [
+      26
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 20,
+  "fields": {
+    "title": "Dawn FM",
+    "artist": "The Weekend",
+    "release_date": "16/04/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663320763/The-Weeknd-Dawn-FM_upw8j2.webp",
+    "critic1_rating": 5,
+    "critic2_rating": 4,
+    "critic1_link": "https://www.theguardian.com/music/2022/jan/07/the-weeknd-dawn-fm-review",
+    "critic2_link": "https://pitchfork.com/news/the-weeknd-loses-voice-cancels-la-show-mid-song/",
+    "genres": [
+      3
+    ]
+  }
+},
+{
+  "model": "albums.album",
+  "pk": 21,
+  "fields": {
+    "title": "Wet Leg",
+    "artist": "Wet Leg",
+    "release_date": "16/02/2022",
+    "album_image": "https://res.cloudinary.com/dqcowm72f/image/upload/v1663320970/wetleg_zdcpw2.webp",
+    "critic1_rating": 4,
+    "critic2_rating": 3,
+    "critic1_link": "https://www.theguardian.com/music/2022/apr/07/wet-leg-wet-leg-album-review-chaise-longue-domino",
+    "critic2_link": "https://pitchfork.com/reviews/albums/wet-leg-wet-leg/",
+    "genres": [
+      26
+    ]
+  }
+}
+]

@@ -1,0 +1,266 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 1,
+  "fields": {
+    "text": "Thought this album was superb",
+    "created_at": "2022-09-14T10:06:11.861Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "text": "Really rubbish album",
+    "created_at": "2022-09-14T10:06:06.360Z",
+    "rating": 2,
+    "album": 2,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "text": "Bloody marvellous",
+    "created_at": "2022-09-14T10:06:03.161Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-14T10:05:57.498Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-14T11:03:17.135Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 11,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-15T10:11:37.252Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 12,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-15T10:11:49.044Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 13,
+  "fields": {
+    "text": "shitttt",
+    "created_at": "2022-09-15T14:59:48.426Z",
+    "rating": 4,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 14,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-15T10:11:49.566Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 15,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-15T10:11:49.707Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 16,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-15T10:11:50.067Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 17,
+  "fields": {
+    "text": "rubbish",
+    "created_at": "2022-09-15T10:13:33.705Z",
+    "rating": 4,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 21,
+  "fields": {
+    "text": "really awesome album yeah",
+    "created_at": "2022-09-15T14:59:11.871Z",
+    "rating": 5,
+    "album": 1,
+    "owner": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 24,
+  "fields": {
+    "text": "Loved this album so much!",
+    "created_at": "2022-09-16T11:24:51.563Z",
+    "rating": 4,
+    "album": 12,
+    "owner": 10
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 25,
+  "fields": {
+    "text": "Super duper album!",
+    "created_at": "2022-09-16T11:25:11.234Z",
+    "rating": 4,
+    "album": 11,
+    "owner": 10
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 27,
+  "fields": {
+    "text": "really awesome",
+    "created_at": "2022-09-16T12:04:20.282Z",
+    "rating": 3,
+    "album": 11,
+    "owner": 12
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 28,
+  "fields": {
+    "text": "yes!!",
+    "created_at": "2022-09-16T12:14:18.783Z",
+    "rating": 4,
+    "album": 13,
+    "owner": 12
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 29,
+  "fields": {
+    "text": "Amzing shizzle",
+    "created_at": "2022-09-16T12:15:44.414Z",
+    "rating": 5,
+    "album": 13,
+    "owner": 13
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 30,
+  "fields": {
+    "text": "Awesome. Loved this album!!",
+    "created_at": "2022-09-16T12:18:08.345Z",
+    "rating": 4,
+    "album": 11,
+    "owner": 13
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 31,
+  "fields": {
+    "text": "Superb!",
+    "created_at": "2022-09-16T12:19:30.538Z",
+    "rating": 5,
+    "album": 11,
+    "owner": 15
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 32,
+  "fields": {
+    "text": "brilliant",
+    "created_at": "2022-09-16T12:46:36.077Z",
+    "rating": 4,
+    "album": 11,
+    "owner": 15
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 33,
+  "fields": {
+    "text": "Super stuff",
+    "created_at": "2022-09-16T12:52:47.349Z",
+    "rating": 5,
+    "album": 11,
+    "owner": 15
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 34,
+  "fields": {
+    "text": "Didn't really like it!",
+    "created_at": "2022-09-16T12:53:55.750Z",
+    "rating": 2,
+    "album": 13,
+    "owner": 16
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 35,
+  "fields": {
+    "text": "lovely, bit boring",
+    "created_at": "2022-09-16T13:40:50.860Z",
+    "rating": 3,
+    "album": 11,
+    "owner": 16
+  }
+}
+]
