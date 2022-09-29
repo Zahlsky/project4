@@ -74,6 +74,7 @@ const Login = () => {
             <input type='submit' value='Login' className='submitbtn-fixed' />
             
             {login && 
+            // if login is truthy then render this:
             <>
               <button className='btn oksubmit' onClick={handleClick}>Done! Click here to go back</button>
               <Link className='btn oksubmit' as='btn' to='/' >Or click here to go to Home</Link>

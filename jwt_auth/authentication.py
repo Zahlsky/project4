@@ -17,6 +17,7 @@ class JWTAuthentication(BasicAuthentication):
             return None
 
         if not header.startswith('Bearer'):
+            print("FAILED AT TOKEN SYNTAX")
             raise PermissionDenied("Invalid Token")
 
         token = header.replace('Bearer ', '')
